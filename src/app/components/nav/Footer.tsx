@@ -22,7 +22,7 @@ export const Footer = () => (
         <li>Lorem Ipsum</li>
       </ul>
     </footer>
-    <div className="flex justify-center items-center text-white p-5 bg-[#4D8EFF]">
+    <div className="flex justify-center items-center text-white p-5 bg-accent">
       © Solitaire Property Management, 2025. All rights reserved.
     </div>
   </>

@@ -1,4 +1,3 @@
-import EmblaCarousel from "../components/@elements/carousel/Carousel";
 import { AboutUs } from "../components/home/AboutUs";
 import { Details } from "../components/home/Details";
 import { Services } from "../components/projects/Services";
