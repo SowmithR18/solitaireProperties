@@ -30,8 +30,8 @@ const GenericCarousel: React.FC<PropType> = (props) => {
     <section className={styles.embla}>
       <div className={styles.embla__viewport} ref={emblaRef}>
         <div className={styles.embla__container}>
-          {children.map(childCard => 
-            <div className={styles.embla__slide}>
+          {children.map((childCard, index) => 
+            <div className={styles.embla__slide} key={index}>
                 {childCard}
             </div>
           )}

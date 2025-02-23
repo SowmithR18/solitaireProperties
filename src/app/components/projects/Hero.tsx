@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const Hero = () => (
-  <section className="flex flex-row items-center justify-end h-3/5 bg-gradient-to-tl from-white to-blue-500 text-white relative">
-    <div className="flex-row flex justify-between items-center pl-48">
+  <section className="flex flex-row items-center justify-end h-3/5 bg-gradient-to-tl from-white to-background text-white relative">
+    <div className="flex flex-col md:flex-row justify-between items-center md:pl-48">
       <div className="hero-text">
         <h1 className="text-5xl font-bold mb-5 leading-normal">
           Expert Property Management
@@ -17,7 +17,7 @@ export const Hero = () => (
         <div className="flex gap-4 my-4">
           <Link
             href="/"
-            className="bg-blue-500 text-lg text-white py-2 px-6 rounded-full hover:bg-blue-700"
+            className="bg-accent text-lg text-white py-2 px-6 rounded-full hover:bg-orange-600"
           >
             Explore properties
           </Link>

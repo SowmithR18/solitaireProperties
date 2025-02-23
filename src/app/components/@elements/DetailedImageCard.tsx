@@ -42,10 +42,10 @@ export const DetailedImageCard = ({
                 className={className}
             />
         )}
-        <div className="flex w-[40rem] relative p-4 px-7 flex-col items-start justify-between">
+        <div className="flex w-full md:w-[40rem] relative p-4 px-7 flex-col items-start justify-between">
             <span className="font-semibold text-lg mb-2">{title}</span>
             <div className="text-lg mb-4 leading-relaxed line-clamp-3">{description}</div>
-            <div className="grid grid-cols-2 grid-rows-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2">
                 <Image
                     src="/svgs/villa.svg"
                     alt="villa"

@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 export const Details = ({ imagesrc }: { imagesrc: string }) => (
-  <section className="m-10 px-64 grid grid-cols-4 gap-4">
-    <div className="flex flex-row justify-between items-center bg-gray-100 rounded-xl p-4 col-span-2 row-span-2 gap-7">
+  <section className="m-2 md:m-10 px-4 md:px-64 grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div className="flex flex-col md:flex-row justify-between items-center bg-gray-100 rounded-xl p-4 col-span-2 row-span-2 gap-7">
       <Image
         src={`/Images/${imagesrc}`}
         alt="Building"

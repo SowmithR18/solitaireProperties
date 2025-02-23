@@ -1,5 +1,5 @@
 export const NavBar = () => (
-  <nav className="bg-white px-48 py-4 flex justify-between items-center">
+  <nav className="bg-white px-4 md:px-48 py-4 flex justify-between items-center">
     <h1 className="text-xl font-bold">Solitaire Property Management</h1>
     <ul className="flex gap-5">
       <li>
@@ -20,7 +20,7 @@ export const NavBar = () => (
       <li>
         <a
           href="/contact"
-          className="bg-blue-500 text-lg text-white py-2 px-6 rounded-full hover:bg-blue-700"
+          className="bg-accent text-lg text-white py-2 px-6 rounded-full hover:bg-orange-600"
         >
           Contact Us
         </a>

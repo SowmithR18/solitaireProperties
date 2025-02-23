@@ -1,6 +1,6 @@
 export const Footer = () => (
   <>
-    <footer className="bg-[#E1ECFF] flex flex-row justify-around p-24">
+    <footer className="bg-accent-light flex flex-row justify-around p-4 md:p-24">
       <ul className="text-gray-700">
         <h3 className="font-semibold text-2xl mb-5 text-black">
           Real Estate Management

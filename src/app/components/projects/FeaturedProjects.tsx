@@ -36,11 +36,11 @@ export const FeaturedProjects = () => {
   ));
 
   return (
-    <section className="bg-[#E1ECFF] pt-20 px-64 flex flex-col items-center gap-4 mt-24">
-      <h1 className="text-4xl font-bold py-2 border-b-[5px] border-solid border-b-blue-500">
+    <section className="bg-[#E1ECFF] pt-20 px-4 md:px-64 flex flex-col items-center gap-4 mt-24">
+      <h1 className="text-4xl font-bold py-2 border-b-[5px] border-solid border-b-accent">
         Featured Projects
       </h1>
-      <section className="m-10">
+      <section className="m-4 md:m-10">
         <div className="h-[20rem]">
           <DetailedImageCard
             src={projects[0].src}

@@ -1,6 +1,6 @@
 export const AboutUs = () => (
-  <section className="m-10 px-64 flex flex-col items-center gap-4 mt-28">
-    <h1 className="text-4xl font-bold py-2 border-b-[5px] border-solid border-b-[#D2E2FF]">
+  <section className="m-2 md:m-10 px-4 md:px-64 flex flex-col items-center gap-4 mt-28">
+    <h1 className="text-4xl font-bold py-2 border-b-[5px] border-solid border-b-accent-light">
       About Us
     </h1>
     <span className="text-2xl text-[#575757] mt-9">
