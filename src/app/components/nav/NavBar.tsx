@@ -1,10 +1,15 @@
+import Image from "next/image";
+
 export const NavBar = () => (
   <nav className="bg-background px-4 md:px-48 py-4 h-24 flex justify-between items-center">
-    <div className="flex flex-col">
-      <h1 className="text-4xl text-white font-bold">SOLITAIRE</h1>
-      <h2 className="text-sm text-white font-thin">
-        Property Management Pvt. Ltd.
-      </h2>
+    <div className="flex flex-row items-center gap-1">
+      <Image src="/Logo/logo.png" alt="logo" width={100} height={100} />
+      <div className="flex flex-col">
+        <h1 className="text-4xl text-white font-bold">SOLITAIRE</h1>
+        <h2 className="text-sm text-white font-thin">
+          Property Management Pvt. Ltd.
+        </h2>
+      </div>
     </div>
     <ul className="flex gap-5">
       <li>
