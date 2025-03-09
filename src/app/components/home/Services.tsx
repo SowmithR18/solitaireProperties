@@ -1,8 +1,8 @@
 import { Card } from "../@elements/Card";
 
 export const Services = () => (
-  <section className="bg-[#E1ECFF] py-20 px-4 md:px-64 flex flex-col items-center gap-4 mt-40">
-    <h1 className="text-4xl font-bold py-2 border-b-[5px] border-solid border-b-accent">
+  <section className="bg-background py-20 px-4 md:px-64 flex flex-col items-center gap-4 mt-60">
+    <h1 className="text-4xl font-bold text-white py-2 border-b-[5px] border-solid border-b-accent">
       Our Services
     </h1>
     <section className="m-10 grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4">

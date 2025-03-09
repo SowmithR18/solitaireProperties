@@ -4,11 +4,44 @@ import "./globals.css";
 import { NavBar } from "./components/nav/NavBar";
 import { Footer } from "./components/nav/Footer";
 
-const dmSans = localFont({
-  src: "../../public/Fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf",
+const nexa = localFont({
+  src: [
+    {
+      path: "../../public/Fonts/nexa/Nexa Thin.otf",
+      style: "normal",
+      weight: "100",
+    },
+    {
+      path: "../../public/Fonts/nexa/Nexa Light.otf",
+      style: "normal",
+      weight: "200",
+    },
+    {
+      path: "../../public/Fonts/nexa/Nexa Regular.otf",
+      style: "normal",
+      weight: "400",
+    },
+    {
+      path: "../../public/Fonts/nexa/Nexa Bold.otf",
+      style: "normal",
+      weight: "500",
+    },
+    {
+      path: "../../public/Fonts/nexa/Nexa XBold.otf",
+      style: "normal",
+      weight: "600",
+    },
+  ],
   display: "swap",
-  variable: "--font-dm-sans",
+  variable: "--font-nexa",
 });
+
+// const nexa = localFont({
+//   src: "../../public/Fonts/nexa/Nexa Regular.otf",
+//   display: "swap",
+//   variable: "--font-nexa",
+//   style: "normal",
+// });
 
 export const metadata: Metadata = {
   title: "Solitaire Property Management",
@@ -22,7 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} antialiased`}>
+      <body className={`${nexa.variable} antialiased`}>
         <NavBar />
         {children}
         <Footer />

@@ -1,19 +1,35 @@
+import Image from "next/image";
+
 export const AboutUs = () => (
-  <section className="m-2 md:m-10 px-4 md:px-64 flex flex-col items-center gap-4 mt-28">
-    <h1 className="text-4xl font-bold py-2 border-b-[5px] border-solid border-b-accent-light">
+  <section className="m-2 md:m-10 md:mt-44 px-4 md:px-64 flex flex-col items-center gap-4 mt-28 relative">
+    <Image
+      src="/Logo/logo.png"
+      alt="logo"
+      fill
+      quality={100}
+      className="absolute -z-10 opacity-30 px-4 md:px-64 object-contain m-auto scale-150"
+    />
+    <h1 className="text-4xl font-bold py-2 border-b-[5px] border-solid border-b-background">
       About Us
     </h1>
-    <span className="text-2xl text-[#575757] mt-9">
-      We are committed to providing comprehensive and reliable property
-      management services that ensure peace of mind for property owners and
-      tenants alike. With years of experience in the industry, our team of
-      professionals specializes in maximizing the value and performance of
-      residential, commercial, and mixed-use properties. We understand that
-      managing properties involves much more than just maintenance; it’s about
-      building lasting relationships, enhancing property value, and delivering
-      exceptional service at every touchpoint. Our approach combines expertise,
-      technology, and a client-focused philosophy to provide solutions tailored
-      to the unique needs of each property.
+    <span className="text-4xl font-thin text-[#575757] mt-9 text-center">
+      Solitaire Property Management Pvt. Ltd extends their services towards
+      commercial buildings and residential apartments. The logo of Solitaire
+      Property Management Pvt. Ltd. symbolizes both commercial and residential
+      services, with upward arrows representing commercial buildings and dots
+      with a curve symbolizing residential apartments. The gray and black
+      merging lines resemble a handshake, highlighting the company's
+      client-focused approach. The central diamond reflects the brand's name,
+      emphasizing exceptional quality and transparency. Overall, the logo's
+      design embodies growth, client satisfaction, and the high-quality services
+      the company offers.
     </span>
+    <Image
+      src="/Logo/diamonds.png"
+      alt="logo"
+      fill
+      quality={100}
+      className="mt-72 pt-60"
+    />
   </section>
 );

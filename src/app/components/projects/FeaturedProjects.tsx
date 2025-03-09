@@ -1,6 +1,6 @@
 import { ImageCard } from "../@elements/ImageCard";
-import response from '../../../../public/data/projects.json';
-import fs from 'fs';
+import response from "../../../../public/data/projects.json";
+import fs from "fs";
 import path from "path";
 import { DetailedImageCard } from "../@elements/DetailedImageCard";
 import GenericCarousel from "../@elements/generic-carousel/GenericCarousel";
@@ -14,15 +14,19 @@ export type Project = {
 };
 
 export const FeaturedProjects = () => {
-  const projectDirPath = path.join(process.cwd(), 'public', 'projects');
+  const projectDirPath = path.join(process.cwd(), "public", "projects");
   const data = response;
-  const projects: Project[] = data.map((project: Partial<Project>): Project => ({
-    propertyName: project.propertyName ?? '',
-    description: project.description ?? '',
-    shortDescription: project.shortDescription ?? '',
-    alt: project.propertyName ?? '',
-    src: fs.readdirSync(path.join(projectDirPath, project.propertyName ?? '')).map(image => `/projects/${project.propertyName ?? ''}/${image}`)
-  }));
+  const projects: Project[] = data.map(
+    (project: Partial<Project>): Project => ({
+      propertyName: project.propertyName ?? "",
+      description: project.description ?? "",
+      shortDescription: project.shortDescription ?? "",
+      alt: project.propertyName ?? "",
+      src: fs
+        .readdirSync(path.join(projectDirPath, project.propertyName ?? ""))
+        .map((image) => `/projects/${project.propertyName ?? ""}/${image}`),
+    })
+  );
 
   const projectCards = projects.map((project, index) => (
     <ImageCard
@@ -53,9 +57,8 @@ export const FeaturedProjects = () => {
           />
         </div>
         <div className="my-10">
-          <GenericCarousel children={projectCards}/>
+          <GenericCarousel children={projectCards} />
         </div>
-        
       </section>
     </section>
   );
