@@ -3,7 +3,7 @@ import Background from "../@elements/BackgroundImage";
 
 export const Hero = () => (
   <section className="">
-    <Background src="/Images/HomeHero.png">
+    <Background src="/Images/HomeHero.png" flipImage>
       <div className="flex flex-col justify-center items-end w-full h-svh hero-text p-4 md:p-0 text-white">
         <div className="text-left m-0 md:mr-20 md:mt-[-150px]">
           <h1 className="text-5xl font-bold mb-5 leading-normal">

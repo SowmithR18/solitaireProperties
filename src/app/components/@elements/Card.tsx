@@ -7,6 +7,7 @@ export const Card = ({
   width = 100,
   title,
   description,
+  bgColor = "bg-gray-100",
 }: {
   src: string;
   alt: string;
@@ -14,8 +15,14 @@ export const Card = ({
   width?: number;
   title: string;
   description: string;
+  bgColor?: string;
 }) => (
-  <div className="flex justify-start items-stretch flex-col text-left bg-gray-100 rounded-2xl p-5 gap-4">
+  <div
+    className={
+      bgColor +
+      " flex justify-start items-stretch flex-col text-left rounded-2xl p-5 gap-4"
+    }
+  >
     <Image
       src={src}
       alt={alt}

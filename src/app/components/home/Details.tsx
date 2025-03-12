@@ -15,8 +15,8 @@ export const Details = ({ imagesrc }: { imagesrc: string }) => (
           Find your property at best price
         </div>
         <span className="text-lg">
-          Buying properties at the best price from our website ensures you get
-          the most value for your investment.
+          Find your ideal property at the best price available. Explore
+          unbeatable deals on homes that match your budget and preferences.
         </span>
         <br />
         <button className="border font-semibold border-black bg-transparent text-black py-2 px-6 rounded-full mt-4">
